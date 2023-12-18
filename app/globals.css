@@ -1,10 +1,9 @@
 /* @tailwind base; */
-@tailwind components;
-@tailwind utilities;
-
 @layer tailwind {
   @tailwind base;
 }
+@tailwind components;
+@tailwind utilities;
 
 /* @import "@mantine/core/styles.layer.css"; */
 @import '@mantine/core/styles.css';
