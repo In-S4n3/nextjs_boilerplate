@@ -1,4 +1,5 @@
-import { Button, PasswordInput, TextInput } from '@mantine/core';
+import { CTA } from '@/components/CTA';
+import { PasswordInput, TextInput } from '@mantine/core';
 import Link from 'next/link';
 
 export function Login() {
@@ -41,7 +42,7 @@ export function Login() {
                   type="email"
                   autoComplete="email"
                   required
-                  className="block w-full rounded-md border-0 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 bg-white text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -71,26 +72,23 @@ export function Login() {
                   type="password"
                   autoComplete="current-password"
                   required
-                  className="block w-full rounded-md border-0 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 bg-white text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
 
             <div>
-              <Button
-                type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
+              <CTA fullWidth type="submit">
                 Sign in
-              </Button>
+              </CTA>
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm text-gray-400">
+          <p className="mt-10 text-center text-sm text-gray-700">
             Not a member?{' '}
             <Link
               href="#"
-              className="font-semibold leading-6 text-indigo-400 hover:text-indigo-300"
+              className="font-semibold leading-6 text-indigo-700 hover:text-indigo-300"
             >
               Start a 14 day free trial
             </Link>
