@@ -100,9 +100,10 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <Image
-              className="h-7"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
               alt="Company name"
+              width={40}
+              height={40}
             />
             <p className="text-sm leading-6 text-gray-300">
               Making the world a better place through constructing elegant
