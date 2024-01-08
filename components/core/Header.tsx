@@ -6,8 +6,8 @@ import Link from 'next/link';
 export default function Header() {
   const [opened, { open, close }] = useDisclosure(false);
   return (
-    <header className="py-10 bg-gray-900">
-      <nav className="max-w-8xl mx-auto flex items-center justify-between px-8">
+    <header className="bg-gray-900 py-10">
+      <nav className="mx-auto flex max-w-8xl items-center justify-between px-8">
         <Link href="/" className="text-white">
           <h1 className="text-base">BOILERPLATE</h1>
         </Link>

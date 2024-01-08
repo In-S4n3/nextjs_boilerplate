@@ -1,6 +1,8 @@
-import { cn } from '@/utils/cn';
-import { Button, ButtonProps, ElementProps } from '@mantine/core';
 import React from 'react';
+
+import { Button, ButtonProps, ElementProps } from '@mantine/core';
+
+import { cn } from '@/utils/cn';
 
 interface Props
   extends ButtonProps,

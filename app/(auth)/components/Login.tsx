@@ -1,6 +1,8 @@
-import { CTA } from '@/components/CTA';
 import { PasswordInput, TextInput } from '@mantine/core';
+import Image from 'next/image';
 import Link from 'next/link';
+
+import { CTA } from '@/components/CTA';
 
 export function Login() {
   return (
@@ -15,7 +17,7 @@ export function Login() {
       */}
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <img
+          <Image
             className="mx-auto h-10 w-auto"
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
             alt="Your Company"

@@ -9,7 +9,7 @@ export default function AuthLayout({
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-r from-indigo-500">
       <Header />
-      <main className="flex justify-center flex-col items-center flex-1">
+      <main className="flex flex-1 flex-col items-center justify-center">
         {children}
       </main>
       <Footer />
