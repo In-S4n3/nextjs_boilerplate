@@ -3,14 +3,32 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parser": "@typescript-eslint/parser",
       "rules": {
+        "tailwindcss/no-arbitrary-value": "off",
+        "no-unused-vars": "warn",
         "react/no-unescaped-entities": "off",
+        "no-console": [
+          1,
+          {
+            "allow": ["warn", "error"]
+          }
+        ],
         "react/jsx-curly-brace-presence": [
           "error",
           {
             "props": "never",
             "children": "never",
             "propElementValues": "always"
+          }
+        ],
+        "no-shadow": [
+          "warn",
+          {
+            "builtinGlobals": false,
+            "hoist": "functions",
+            "allow": [],
+            "ignoreOnInitialization": false
           }
         ],
         "import/order": [
@@ -37,7 +55,16 @@
             }
           }
         ],
-        "tailwindcss/no-arbitrary-value": "warn"
+        "prefer-const": [
+          "error",
+          {
+            "destructuring": "any",
+            "ignoreReadBeforeAssign": false
+          }
+        ],
+        "comma-dangle": ["error", "always-multiline"],
+        "semi": ["error", "always"],
+        "no-undef": "off"
       }
     }
   ],
