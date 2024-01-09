@@ -2,6 +2,7 @@
 import { Burger, Button, Drawer, Group } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link';
+import { CTA } from '../CTA';
 
 export default function Header() {
   const [opened, { open, close }] = useDisclosure(false);
@@ -12,9 +13,9 @@ export default function Header() {
           <h1 className="text-base">BOILERPLATE</h1>
         </Link>
         <Group visibleFrom="xs">
-          <Button component="a" className="bg-purple-500" href="/login">
-            Login
-          </Button>
+          <Link href="/login">
+            <CTA>Login</CTA>
+          </Link>
         </Group>
         <Burger
           opened={opened}
@@ -32,9 +33,9 @@ export default function Header() {
         title="BOILERPLATE"
         overlayProps={{ backgroundOpacity: 0.5, blur: 4 }}
       >
-        <Button component="a" className="bg-purple-500" href="/login">
-          Login
-        </Button>
+        <Link href="/login">
+          <CTA>Login</CTA>
+        </Link>
       </Drawer>
     </header>
   );
